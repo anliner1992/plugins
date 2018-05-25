@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Slider - Swiper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+
+    <!-- No need to include this styling -->
+
+    <style>
+     html, body {
+       position: relative;
+       height: 100%;
+     }
+     body {
+       background: #eee;
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       color:#000;
+       margin: 0;
+       padding: 0;
+     }
+     .swiper-container {
+       width: 100%;
+       height: 100%;
+     }
+     .swiper-slide {
+       text-align: center;
+       font-size: 35px;
+       background: #fff;
+       /* Center slide text vertically */
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       -webkit-justify-content: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       -webkit-align-items: center;
+       align-items: center;
+     }
+     h2 {color: #fff}
+   </style>
+  </head>
+  <body>
+
+    <!-- HTML Mockups Start -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Step 1 - First copy the css files to the header</div>
+        <div class="swiper-slide">Step 2 - Copy this html from HTML Mockups Start to HTML Mockups End</div>
+        <div class="swiper-slide">Step 3 - Copy the Javascript file before the BODY tag</div>
+        <div class="swiper-slide">Step 4 - Copy the Initialize Swiper codes below under Swiper JS</div>
+        <div class="swiper-slide">Step 5 - Refresh your page to see the changes</div>
+
+        <!-- Start of mockup for slider with background image -->
+        <div data-background="https://images.unsplash.com/photo-1498263382026-c65d01dad017?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=39dfa4588454cba293783e9f5d45f969&auto=format&fit=crop&w=1920&q=80" class="swiper-lazy swiper-slide">
+          <div class="swiper-lazy-preloader">
+          </div>
+          <h2>This is slider with background image</h2>
+        </div>
+        <!-- End of mockup for slider with background image -->
+
+      </div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- HTML Mockups End -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      // Disable preloading of all images
+      preloadImages: false,
+      // Enable lazy loading
+      lazy: true
+    });
+  </script>
+</body>
+</html>
