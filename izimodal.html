@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Izimodal</title>
+
+  <!-- CSS: Izimodal -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.css">
+
+  <style>
+    html,body {
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      padding: 15px
+    }
+    .section a {
+      min-width: 220px;
+      background: #6200ee;
+      color: #fff;
+      padding: 10px 25px;
+      text-decoration: none
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HTML: Izimodal -->
+  <div class="section">
+    <h1>Izimodal</h1>
+    <p>Click the link the button below</p><br>
+    <a href="#" class="trigger-modal">Contact Us</a>
+  </div>
+  <!-- HTML: End Izimodal -->
+
+  <!-- Don't includ this script if you already have one -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js'></script>
+
+
+  <!-- JS: Izimodal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.js"></script>
+
+  <!-- ACTIVATE: Izimodal -->
+  <script type="text/javascript">
+    // Modal
+    $("#modal").iziModal({
+      title: "Contact Us",
+      subtitle: 'Type the form for inquiries',
+      headerColor: '#6200ee',
+      width: '768px',
+      top: '100px',
+      icon: 'icon-event icon-btn',
+      fullscreen: true,
+      iframe: true,
+      iframeHeight: 800,
+      // Provide the IFRAME url below
+      iframeURL: 'https://webriq.com'
+    });
+    $(document).on('click', '.trigger-modal', function(event) {
+      event.preventDefault();
+      $('#modal').iziModal('open');
+    });
+  </script>
+
+</body>
+
+</html>
