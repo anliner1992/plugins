@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lightbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <style>
+      .gallery {
+        display: flex;
+        padding: 15px
+      }
+      .gallery a {
+        margin: 15px
+      }
+      .header {
+        margin-left: 25px
+      }
+    </style>
+    </head>
+  <body>
+    <div class="header">
+      <h1>Lightbox Gallery</h1>
+      <p>Click the image to open lightbox</p>
+    </div>
+    <div class="gallery">
+      <a href="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e5f7a670b5cd3ff8bbc7b21ef4e4461&auto=format&fit=crop&w=1920&q=80" data-lightbox="gallery">
+        <img src="https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0e5f7a670b5cd3ff8bbc7b21ef4e4461&auto=format&fit=crop&w=320&q=80" alt="">
+      </a>
+      <a href="https://images.unsplash.com/photo-1520420097861-e4959843b682?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a76802ff83a847d60d945e4f44cd241&auto=format&fit=crop&w=1050&q=80" data-lightbox="gallery">
+        <img src="https://images.unsplash.com/photo-1520420097861-e4959843b682?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a76802ff83a847d60d945e4f44cd241&auto=format&fit=crop&w=320&q=80" alt="">
+      </a>
+      <a href="https://images.unsplash.com/photo-1511789421096-2b3be5f1f623?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e2f9b6ddc7b729ef90fde26207e2f26&auto=format&fit=crop&w=1049&q=80" data-lightbox="gallery">
+        <img src="https://images.unsplash.com/photo-1511789421096-2b3be5f1f623?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e2f9b6ddc7b729ef90fde26207e2f26&auto=format&fit=crop&w=320&q=80" alt="">
+      </a>
+    </div>
+
+  <!-- No need to include JQUERY if you already have one -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <!-- Lity Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+
+</body>
+</html>
